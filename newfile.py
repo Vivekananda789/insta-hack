@@ -1,15 +1,22 @@
-while True:
-    # Get the input from the user
-    input_string = input("Enter a calculation: ")
+import time
+import webbrowser
 
-    # Check if the input is 'q' to quit
-    if input_string == 'q':
-        break
+print("Loading...")
+time.sleep(5)
+print("Welcome To Vivek Script")
+print("1. Insta-Hack")
+print("2. Attack")
+print("3. Exit")
 
-    # Try to evaluate the input as a Python expression
-    try:
-        result = eval(input_string)
-    except Exception as e:
-        print("Invalid input:", e)
-    else:
-        print("Result:", result)
+user_input = input("Enter a choice: ")
+
+if user_input == "1":
+    webbrowser.open_new_tab("about:blank")
+elif user_input == "2":
+    print("Error: Attack option is not available.")
+elif user_input == "3":
+    print("Exiting...")
+    exit()
+else:
+    print("Invalid choice. Exiting...")
+    exit()
